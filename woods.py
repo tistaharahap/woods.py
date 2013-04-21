@@ -161,6 +161,56 @@ class OutOfTheWoods(object):
 		print ">> Some people struggle to change, some just change. It's your call."
 		
 		self.pressAnyKey()
+		self.clearScreen()
+		
+		print ">> You saw a %s in front of a big tree" % self.fragileObjectInFrontOfTree
+		
+		print "\n>> That fragile object is your heart at the moment. The bigger the object, the bigger your heart is."
+		print ">> Big or Small does not pertain to quality, this is your capacity at the moment."
+		
+		self.pressAnyKey()
+		self.clearScreen()
+		
+		print ">> The fragile object is %s." % self.fragileObjectCondition
+		
+		print "\n>> A whole heart is a healthy heart, all the vitamins and nutrition to keep it whole are fed perfectly."
+		print ">> If it's cracked or broken, you must find some way to heal or at least get some closure."
+		print ">> Don't bleed your heart, no one deserves a bleeding heart."
+		
+		self.pressAnyKey()
+		self.clearScreen()
+		
+		print ">> The wild animal you see is a %s." % self.wildAnimalSeen
+		
+		print "\n>> This wild animal is actually how you see yourself as in your character."
+		print ">> You have your own subjectivity towards this animal and that's all right."
+		print ">> The thing is, this animal is still wild. Your next answer is a defining one."
+		
+		if self.takeTheWildAnimalWithMe == True:
+			print "\n>> You choose to tame and take the %s with you." % self.wildAnimalSeen
+			print ">> Your answer shows that you are a Natural Born Leader."
+			print ">> While people struggle to be leaders, you don't."
+			print ">> The more the people around you struggle, the more obvious you are as a leader."
+			print ">> Just to remember to have fun once in a while."
+		else:
+			print "\n>> You choose to run from the %s." % self.wildAnimalSeen
+			print ">> You are best to function collectively."
+			print ">> Your job is your job, that's just it, it's a job."
+			print ">> A career is made of horizontal decisions."
+			print ">> Try looking what's up there at the top, inspire yourself."
+		
+		self.pressAnyKey()
+		self.clearScreen()
+		
+		print ">> You brought %d torch(es) with you." % self.torchCarried
+		
+		print "\n>> The more torch you carry, the more infidel you are with your love life."
+		print ">> Be careful not to spread yourself too thin."
+		print ">> Fidelity is like chivalry these days, rare and ideal."
+		print ">> No matter how many torches, focus on 1, you can't light them all up anyways."
+		
+		self.pressAnyKey()
+		self.clearScreen()
 		
 	def fight(self):
 		print "\nFight or Surrender?",
