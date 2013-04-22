@@ -188,13 +188,13 @@ class OutOfTheWoods(object):
 		
 		if self.takeTheWildAnimalWithMe == True:
 			print "\n>> You choose to tame and take the %s with you." % self.wildAnimalSeen
-			print ">> Your answer shows that you are a Natural Born Leader."
+			print "\n>> Your answer shows that you are a Natural Born Leader."
 			print ">> While people struggle to be leaders, you don't."
 			print ">> The more the people around you struggle, the more obvious you are as a leader."
 			print ">> Just to remember to have fun once in a while."
 		else:
 			print "\n>> You choose to run from the %s." % self.wildAnimalSeen
-			print ">> You are best to function collectively."
+			print "\n>> You are best to function collectively."
 			print ">> Your job is your job, that's just it, it's a job."
 			print ">> A career is made of horizontal decisions."
 			print ">> Try looking what's up there at the top, inspire yourself."
@@ -208,6 +208,46 @@ class OutOfTheWoods(object):
 		print ">> Be careful not to spread yourself too thin."
 		print ">> Fidelity is like chivalry these days, rare and ideal."
 		print ">> No matter how many torches, focus on 1, you can't light them all up anyways."
+		
+		self.pressAnyKey()
+		self.clearScreen()
+		
+		action = ""
+		if self.jumpToPond:
+			action = "get wet"
+		else:
+			action = "freshen"
+		print ">> You found a river stream and you choose to %s" % action
+		
+		print "\n>> If you choose to freshen, you are picky when it comes to bedding your sexual counterpart."
+		print ">> On the contrary, if you choose to get wet, you're less picky, even not picky at all."
+		print ">> No matter what you choose, play safe :)"
+		
+		self.pressAnyKey()
+		self.clearScreen()
+		
+		if self.askTheEntity:
+			action = "ask"
+		else:
+			action = "run"
+		print ">> So there's this entity hovering in front of you. You choose to %s." % action
+		
+		print "\n>> If you choose to ask, you have a tendency of asking the Guy above first for His guidances when you run into problems."
+		print ">> The other way around, if you choose to run, you tend to try the problem at hand first and ask for His guidances later."
+		print ">> There is no wrong or right, it's just your own belief."
+		
+		self.pressAnyKey()
+		self.clearScreen()
+		
+		if self.fightBack:
+			action = "fight"
+		else:
+			action = "surrender"
+		print ">> You found a way out of the woods only to find you have a gun pointing at you on your forehead. You %s." % action
+		
+		print "\n>> When you choose to fight, it's obvious that you don't go down easily. You are persistent and you will persevere what's needed to achieve your goals."
+		print ">> If you surrender, you are more likely to accept logical reasonings beyond anything. Everything is in grey and there is no right or wrong, just logical or not logical."
+		print ">> A combination of both is healthy, be open."
 		
 		self.pressAnyKey()
 		self.clearScreen()
